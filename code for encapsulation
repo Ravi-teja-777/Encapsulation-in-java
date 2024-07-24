@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Ravi{
+    private int num1;
+    private int num2;
+    
+    public int getNumber(){
+        return num1+num2;
+    }
+    public void setNumber(int n1,int n2){
+        num1=n1;
+        num2=n2;
+    }
+    
+    public static void main(String args[]){
+        Ravi obj = new Ravi();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter first number : ");
+        int a= in.nextInt();
+        System.out.print("Enter first number : ");
+        int b= in.nextInt();
+        obj.setNumber(a,b);
+        System.out.println("\nThe total result is : "+obj.getNumber());
+    }
+}
